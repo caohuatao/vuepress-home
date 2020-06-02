@@ -1,0 +1,20 @@
+{
+  "name": "caohuatao.github.io",
+  "version": "1.0.0",
+  "description": "'# Hello VuePress!'",
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caohuatao/vue-super-flow.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/caohuatao/vue-super-flow.github.io/issues"
+  },
+  "homepage": "https://github.com/caohuatao/vue-super-flow.github.io#readme",
+  "devDependencies": {}
+}
