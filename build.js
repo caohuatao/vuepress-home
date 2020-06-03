@@ -24,7 +24,7 @@ promiseExec(`cd ${position}`)
   .then(() => promiseExec('git init'))
   .then(() => promiseExec('git add -A'))
   .then(() => promiseExec('git commit -m "deploy"'))
-  .then(() => promiseExec('git push -f https://github.com/caohuatao/caohuatao.io.git master'))
+  .then(() => promiseExec('git push -f https://github.com/caohuatao/caohuatao.github.io.git master'))
   .catch(err => {
     console.error(err)
   })
