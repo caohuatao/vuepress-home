@@ -20,6 +20,8 @@ function promiseExec(script) {
   })
 }
 
+
+
 promiseExec(`cd ${position}`)
   .then(() => promiseExec('git init'))
   .then(() => promiseExec('git add -A'))
