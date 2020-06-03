@@ -16,5 +16,6 @@
     "url": "https://github.com/caohuatao/vue-super-flow.github.io/issues"
   },
   "homepage": "https://github.com/caohuatao/vue-super-flow.github.io#readme",
-  "devDependencies": {}
+  "devDependencies": {},
+  "dependencies": {}
 }

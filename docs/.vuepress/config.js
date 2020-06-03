@@ -4,6 +4,7 @@ module.exports = {
   description: 'Just playing around',
   home: true,
   extraWatchFiles: [
+    '/docs/README.md'
   ]
 }
 
