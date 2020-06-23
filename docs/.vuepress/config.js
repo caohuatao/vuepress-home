@@ -1,11 +1,17 @@
-
 module.exports = {
-  title: 'Hello VuePress',
-  description: 'Just playing around',
+  title: 'Vue-super-flow',
+  description: '',
   home: true,
-  extraWatchFiles: [
-    '/docs/README.md'
-  ]
+  locales: {
+    '/': {
+      lang: 'zh-CN'
+    }
+  },
+  themeConfig: {
+    nav: [
+      {text: '首页', link: '/'},
+      {text: 'Demo', link: '/demo/', target: '_blank'},
+      {text: 'Github', link: 'https://github.com/caohuatao/vue-super-flow', target: '_blank'}
+    ]
+  }
 }
-
-
