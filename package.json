@@ -3,20 +3,19 @@
   "version": "1.0.0",
   "description": "'Vue-super-flow'",
   "scripts": {
-    "dev": "vuepress dev docs",
-    "build": "vuepress build docs && node ./deploy.js"
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs && npm run push",
+    "push": "node ./deploy.js"
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/caohuatao/vue-super-flow.github.io/issues"
+  "resolutions": {
+    "watchpack": "1.6.1"
   },
-  "homepage": "https://github.com/caohuatao/vue-super-flow.github.io#readme",
-  "devDependencies": {},
   "dependencies": {
     "less-loader": "^6.1.2",
     "shelljs": "^0.8.4",
-    "vue-super-flow": "^1.0.1",
+    "vue-super-flow": "^1.2.3",
     "vuepress": "^1.5.0"
   }
 }
