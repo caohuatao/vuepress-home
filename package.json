@@ -15,7 +15,7 @@
   "dependencies": {
     "less-loader": "^6.1.2",
     "shelljs": "^0.8.4",
-    "vue-super-flow": "^1.2.3",
+    "vue-super-flow": "^1.2.5",
     "vuepress": "^1.5.0"
   }
 }

@@ -1,5 +1,5 @@
 module.exports = {
-  title: 'Vue-super-flow',
+  title: '',
   description: '',
   home: true,
   locales: {
@@ -10,7 +10,8 @@ module.exports = {
   themeConfig: {
     nav: [
       {text: '首页', link: '/'},
-      {text: 'Demo', link: '/demo/', target: '_blank'},
+      {text: '配置', link: '/guide/'},
+      {text: '示例', link: '/demo/'},
       {text: 'Github', link: 'https://github.com/caohuatao/vue-super-flow', target: '_blank'}
     ]
   }

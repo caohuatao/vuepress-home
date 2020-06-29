@@ -5,6 +5,7 @@
  */
 // 使用异步函数也是可以的
 import VueSuperFlow from 'vue-super-flow'
+
 import 'vue-super-flow/lib/index.css'
 
 export default (props) => {
