@@ -3,9 +3,38 @@ sidebarDepth: 3
 sidebar: auto
 ---
 
-# 配置
+# 使用说明
 
-## 基本配置
+<br>
+<br>
+
+## 安装
+```shell script
+
+npm install vue-super-flow
+
+yran add vue-spuer-flow
+
+```
+
+<br>
+<br>
+
+## 使用
+
+```js
+
+import SuperFlow from 'vue-super-flow'
+import 'vue-super-flow/lib/index.css'
+
+Vue.use(SuperFlow)
+
+```
+
+<br>
+<br>
+
+## 属性
 
 ### width            
   
@@ -175,4 +204,44 @@ sidebar: auto
 节点生成连线限制           
 :::      
 
+<br>
+<br>
 
+## 方法
+
+### selectedAll
+
+- 参数: ``
+
+:::tip 说明
+选中所有进行拖拽修改 `origin`
+:::
+
+
+### toJSON
+
+- 参数: ``
+
+:::tip 说明
+将 `graph` 对象转为普通 `json` 对象并返回
+:::
+
+### getMouseCoordinate
+
+- 参数: `clientX, clientY`
+
+:::tip 说明
+获取当前鼠标在 `graph` 坐标系的坐标
+:::
+
+
+### addNode
+
+- 参数: `options`
+
+:::tip 说明
+新增节点
+:::
+
+<br>
+<br>
