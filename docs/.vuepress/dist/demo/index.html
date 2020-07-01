@@ -1,37 +1,633 @@
 <!DOCTYPE html>
-<html lang="zh-cn">
+<html lang="zh-CN">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Vue-super-flow</title>
+  <title>Vue super flow</title>
   <meta name="generator" content="VuePress 1.5.0">
   
-  <meta name="description" content="">
-  <link rel="preload" href="/assets/css/0.styles.1642d4db.css" as="style"><link rel="preload" href="/assets/js/app.5ad7d79b.js" as="script"><link rel="preload" href="/assets/js/4.6c26e8ca.js" as="script"><link rel="prefetch" href="/assets/js/2.551e0a6b.js"><link rel="prefetch" href="/assets/js/3.3f84d312.js"><link rel="prefetch" href="/assets/js/5.0bbfe524.js"><link rel="prefetch" href="/assets/js/6.7b20c4e9.js"><link rel="prefetch" href="/assets/js/7.51b84f78.js">
-  <link rel="stylesheet" href="/assets/css/0.styles.1642d4db.css">
+  <meta name="description" content="快速方便实现流程图">
+  <link rel="preload" href="/assets/css/0.styles.317eb7d1.css" as="style"><link rel="preload" href="/assets/js/app.0546b67a.js" as="script"><link rel="preload" href="/assets/js/2.fd4c93ce.js" as="script"><link rel="preload" href="/assets/js/8.6e77e016.js" as="script"><link rel="preload" href="/assets/js/4.a184daa4.js" as="script"><link rel="preload" href="/assets/js/3.4801a644.js" as="script"><link rel="prefetch" href="/assets/js/5.4a2b85c3.js"><link rel="prefetch" href="/assets/js/6.7b20c4e9.js"><link rel="prefetch" href="/assets/js/7.7839e6fc.js"><link rel="prefetch" href="/assets/js/9.d4086be4.js">
+  <link rel="stylesheet" href="/assets/css/0.styles.317eb7d1.css">
 </head>
 <body>
-<div id="app" data-server-rendered="true"><div id="super-flow-demo"><div class="super-flow"><div style="width:4000px;height:3000px;"><!----><canvas class="super-flow__line"></canvas><canvas class="super-flow__line"></canvas><canvas class="super-flow__line"></canvas><canvas class="super-flow__line"></canvas><canvas class="super-flow__line"></canvas><canvas class="super-flow__line"></canvas><canvas class="super-flow__line"></canvas><canvas class="super-flow__line"></canvas><canvas class="super-flow__line"></canvas><canvas class="super-flow__line"></canvas><canvas class="super-flow__line"></canvas><div tabindex="-1" class="super-flow__node" style="width:200px;height:100px;top:1217px;left:1558px;"><div class="flow-node flow-node-condition"><header>
-          条件节点
-        </header> <section></section></div><div class="node-side node-side-top"></div><div class="node-side node-side-right"></div><div class="node-side node-side-bottom"></div><div class="node-side node-side-left"></div></div><div tabindex="-1" class="super-flow__node" style="width:200px;height:100px;top:1367px;left:1558px;"><div class="flow-node flow-node-condition"><header>
-          条件节点
-        </header> <section></section></div><div class="node-side node-side-top"></div><div class="node-side node-side-right"></div><div class="node-side node-side-bottom"></div><div class="node-side node-side-left"></div></div><div tabindex="-1" class="super-flow__node" style="width:200px;height:100px;top:1517px;left:1558px;"><div class="flow-node flow-node-condition"><header>
-          条件节点
-        </header> <section></section></div><div class="node-side node-side-top"></div><div class="node-side node-side-right"></div><div class="node-side node-side-bottom"></div><div class="node-side node-side-left"></div></div><div tabindex="-1" class="super-flow__node" style="width:100px;height:80px;top:1377px;left:1358px;"><div class="flow-node flow-node-start"><header>
-          开始节点
-        </header> <section></section></div><div class="node-side node-side-top"></div><div class="node-side node-side-right"></div><div class="node-side node-side-bottom"></div><div class="node-side node-side-left"></div></div><div tabindex="-1" class="super-flow__node" style="width:200px;height:100px;top:1217px;left:1858px;"><div class="flow-node flow-node-approval"><header>
-          审批节点
-        </header> <section></section></div><div class="node-side node-side-top"></div><div class="node-side node-side-right"></div><div class="node-side node-side-bottom"></div><div class="node-side node-side-left"></div></div><div tabindex="-1" class="super-flow__node" style="width:200px;height:100px;top:1367px;left:1858px;"><div class="flow-node flow-node-approval"><header>
-          审批节点
-        </header> <section></section></div><div class="node-side node-side-top"></div><div class="node-side node-side-right"></div><div class="node-side node-side-bottom"></div><div class="node-side node-side-left"></div></div><div tabindex="-1" class="super-flow__node" style="width:200px;height:100px;top:1517px;left:1858px;"><div class="flow-node flow-node-approval"><header>
-          审批节点
-        </header> <section></section></div><div class="node-side node-side-top"></div><div class="node-side node-side-right"></div><div class="node-side node-side-bottom"></div><div class="node-side node-side-left"></div></div><div tabindex="-1" class="super-flow__node" style="width:200px;height:100px;top:1292px;left:2158px;"><div class="flow-node flow-node-cc"><header>
-          抄送节点
-        </header> <section></section></div><div class="node-side node-side-top"></div><div class="node-side node-side-right"></div><div class="node-side node-side-bottom"></div><div class="node-side node-side-left"></div></div><div tabindex="-1" class="super-flow__node" style="width:80px;height:50px;top:1392px;left:2458px;"><div class="flow-node flow-node-end"><header>
-          结束节点
-        </header> <section></section></div><div class="node-side node-side-top" style="display:none;"></div><div class="node-side node-side-right" style="display:none;"></div><div class="node-side node-side-bottom" style="display:none;"></div><div class="node-side node-side-left" style="display:none;"></div></div><div tabindex="-1" class="super-flow__node" style="width:200px;height:100px;top:1442px;left:2158px;"><div class="flow-node flow-node-cc"><header>
-          抄送节点
-        </header> <section></section></div><div class="node-side node-side-top"></div><div class="node-side node-side-right"></div><div class="node-side node-side-bottom"></div><div class="node-side node-side-left"></div></div><div><div class="flow__menu-mask" style="display:none;"></div><ul tabindex="-1" class="super-flow__menu" style="left:0px;top:0px;display:none;"></ul></div><div tabindex="-1" class="select-all__mask" style="width:NaNpx;height:NaNpx;top:NaNpx;left:NaNpx;display:none;"></div></div></div></div><div class="global-ui"></div></div>
-<script src="/assets/js/app.5ad7d79b.js" defer></script><script src="/assets/js/4.6c26e8ca.js" defer></script>
+<div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Vue super flow</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/guide/" class="nav-link">
+  文档
+</a></div><div class="nav-item"><a href="/demo/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  示例
+</a></div><div class="nav-item"><a href="https://github.com/caohuatao/vue-super-flow" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/guide/" class="nav-link">
+  文档
+</a></div><div class="nav-item"><a href="/demo/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  示例
+</a></div><div class="nav-item"><a href="https://github.com/caohuatao/vue-super-flow" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <!----> </aside> <main aria-labelledby="main-title" class="home"><header class="hero"><!----> <!----> <!----> <!----></header> <!----> <div class="theme-default-content custom content__default"><h2 id="例一"><a href="#例一" class="header-anchor">#</a> 例一</h2> <div class="custom-block tip"><p class="custom-block-title">说明</p> <ol><li><p>使用鼠标右键召唤菜单</p></li> <li><p>通过辅助线对齐节点</p></li> <li><p>拖拽节点移动</p></li> <li><p>节点边缘拖拽生成连接线</p></li></ol></div> <div class="super-flow-demo1"><div class="super-flow" style="overflow:hidden;width:1000px;height:800px;"><!----><!----><div class="super-flow__menu-container"><div class="flow__menu-mask" style="display:none;"></div><ul tabindex="-1" class="super-flow__menu" style="left:0px;top:0px;display:none;"></ul></div><div tabindex="-1" class="select-all__mask" style="width:NaNpx;height:NaNpx;top:NaNpx;left:NaNpx;display:none;"></div></div></div> <details class="custom-block details"><summary>查看代码</summary> <div class="language-vue extra-class"><pre class="language-vue"><code><span class="token comment">&lt;!--
+ * User: CHT
+ * Date: 2020/6/28
+ * Time: 17:48
+--&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>super-flow-demo1<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>super-flow</span>
+      <span class="token attr-name">ref</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>superFlow<span class="token punctuation">&quot;</span></span>
+      <span class="token attr-name">:width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>1000<span class="token punctuation">&quot;</span></span>
+      <span class="token attr-name">:height</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>800<span class="token punctuation">&quot;</span></span>
+      <span class="token attr-name">:graph-menu</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>graphMenu<span class="token punctuation">&quot;</span></span>
+      <span class="token attr-name">:node-menu</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>nodeMenu<span class="token punctuation">&quot;</span></span>
+      <span class="token attr-name">:link-menu</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>linkMenu<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span> <span class="token attr-name"><span class="token namespace">v-slot:</span>node</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>{meta}<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span>
+          <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>flow-node<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+          {{meta.label}}
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>super-flow</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+  <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+    <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token punctuation">{</span>
+        graphMenu<span class="token operator">:</span> <span class="token punctuation">[</span>
+          <span class="token punctuation">[</span>
+            <span class="token punctuation">{</span>
+              label<span class="token operator">:</span> <span class="token string">'节点1'</span><span class="token punctuation">,</span>
+              <span class="token function">disable</span><span class="token punctuation">(</span><span class="token parameter">graph</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token keyword">return</span> <span class="token operator">!</span><span class="token operator">!</span>graph<span class="token punctuation">.</span>nodeList<span class="token punctuation">.</span><span class="token function">find</span><span class="token punctuation">(</span><span class="token parameter">node</span> <span class="token operator">=&gt;</span> node<span class="token punctuation">.</span>meta<span class="token punctuation">.</span>label <span class="token operator">===</span> <span class="token string">'1'</span><span class="token punctuation">)</span>
+              <span class="token punctuation">}</span><span class="token punctuation">,</span>
+              <span class="token function">selected</span><span class="token punctuation">(</span><span class="token parameter">graph<span class="token punctuation">,</span> coordinate</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                graph<span class="token punctuation">.</span><span class="token function">addNode</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+                  width<span class="token operator">:</span> <span class="token number">120</span><span class="token punctuation">,</span>
+                  height<span class="token operator">:</span> <span class="token number">40</span><span class="token punctuation">,</span>
+                  coordinate<span class="token punctuation">,</span>
+                  meta<span class="token operator">:</span> <span class="token punctuation">{</span>
+                    label<span class="token operator">:</span> <span class="token string">'1'</span><span class="token punctuation">,</span>
+                    value<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">]</span>
+                  <span class="token punctuation">}</span>
+                <span class="token punctuation">}</span><span class="token punctuation">)</span>
+              <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+              label<span class="token operator">:</span> <span class="token string">'节点2'</span><span class="token punctuation">,</span>
+              <span class="token function">selected</span><span class="token punctuation">(</span><span class="token parameter">graph<span class="token punctuation">,</span> coordinate</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                graph<span class="token punctuation">.</span><span class="token function">addNode</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+                  width<span class="token operator">:</span> <span class="token number">120</span><span class="token punctuation">,</span>
+                  height<span class="token operator">:</span> <span class="token number">40</span><span class="token punctuation">,</span>
+                  coordinate<span class="token punctuation">,</span>
+                  meta<span class="token operator">:</span> <span class="token punctuation">{</span>
+                    label<span class="token operator">:</span> <span class="token string">'2'</span><span class="token punctuation">,</span>
+                    value<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">]</span>
+                  <span class="token punctuation">}</span>
+                <span class="token punctuation">}</span><span class="token punctuation">)</span>
+              <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+              label<span class="token operator">:</span> <span class="token string">'节点3'</span><span class="token punctuation">,</span>
+              <span class="token function">selected</span><span class="token punctuation">(</span><span class="token parameter">graph<span class="token punctuation">,</span> coordinate</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                graph<span class="token punctuation">.</span><span class="token function">addNode</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+                  width<span class="token operator">:</span> <span class="token number">120</span><span class="token punctuation">,</span>
+                  height<span class="token operator">:</span> <span class="token number">40</span><span class="token punctuation">,</span>
+                  coordinate<span class="token punctuation">,</span>
+                  meta<span class="token operator">:</span> <span class="token punctuation">{</span>
+                    label<span class="token operator">:</span> <span class="token string">'3'</span><span class="token punctuation">,</span>
+                    value<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">]</span>
+                  <span class="token punctuation">}</span>
+                <span class="token punctuation">}</span><span class="token punctuation">)</span>
+              <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+          <span class="token punctuation">]</span><span class="token punctuation">,</span>
+          <span class="token punctuation">[</span>
+            <span class="token punctuation">{</span>
+              label<span class="token operator">:</span> <span class="token string">'节点4'</span><span class="token punctuation">,</span>
+              <span class="token function">selected</span><span class="token punctuation">(</span><span class="token parameter">graph<span class="token punctuation">,</span> coordinate</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                graph<span class="token punctuation">.</span><span class="token function">addNode</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+                  width<span class="token operator">:</span> <span class="token number">120</span><span class="token punctuation">,</span>
+                  height<span class="token operator">:</span> <span class="token number">40</span><span class="token punctuation">,</span>
+                  coordinate<span class="token punctuation">,</span>
+                  meta<span class="token operator">:</span> <span class="token punctuation">{</span>
+                    label<span class="token operator">:</span> <span class="token string">'4'</span><span class="token punctuation">,</span>
+                    value<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">]</span>
+                  <span class="token punctuation">}</span>
+                <span class="token punctuation">}</span><span class="token punctuation">)</span>
+              <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+          <span class="token punctuation">]</span><span class="token punctuation">,</span>
+          <span class="token punctuation">[</span>
+            <span class="token punctuation">{</span>
+              label<span class="token operator">:</span> <span class="token string">'全选'</span><span class="token punctuation">,</span>
+              <span class="token function-variable function">selected</span><span class="token operator">:</span> <span class="token parameter">graph</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+                graph<span class="token punctuation">.</span><span class="token function">selectAll</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+              <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+          <span class="token punctuation">]</span>
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        nodeMenu<span class="token operator">:</span> <span class="token punctuation">[</span>
+          <span class="token punctuation">[</span>
+            <span class="token punctuation">{</span>
+              label<span class="token operator">:</span> <span class="token string">'删除'</span><span class="token punctuation">,</span>
+              <span class="token function-variable function">selected</span><span class="token operator">:</span> <span class="token parameter">node</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+                node<span class="token punctuation">.</span><span class="token function">remove</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+              <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+              label<span class="token operator">:</span> <span class="token string">'编辑'</span><span class="token punctuation">,</span>
+              <span class="token function-variable function">selected</span><span class="token operator">:</span> <span class="token parameter">node</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+                <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">flowNodeClick</span><span class="token punctuation">(</span>node<span class="token punctuation">.</span>meta<span class="token punctuation">)</span>
+              <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+          <span class="token punctuation">]</span>
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        linkMenu<span class="token operator">:</span> <span class="token punctuation">[</span>
+          <span class="token punctuation">[</span>
+            <span class="token punctuation">{</span>
+              label<span class="token operator">:</span> <span class="token string">'删除'</span><span class="token punctuation">,</span>
+              <span class="token function-variable function">selected</span><span class="token operator">:</span> <span class="token parameter">link</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+                link<span class="token punctuation">.</span><span class="token function">remove</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+              <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+          <span class="token punctuation">]</span>
+        <span class="token punctuation">]</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    methods<span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token function">flowNodeClick</span><span class="token punctuation">(</span><span class="token parameter">meta</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">编辑 </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>meta<span class="token punctuation">.</span>label<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>less<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token style"><span class="token language-css">
+  <span class="token selector">.super-flow-demo1</span> <span class="token punctuation">{</span>
+    <span class="token property">width</span>    <span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+    <span class="token property">height</span>   <span class="token punctuation">:</span> auto<span class="token punctuation">;</span>
+    <span class="token property">margin</span>   <span class="token punctuation">:</span> 0 auto<span class="token punctuation">;</span>
+    <span class="token property">overflow</span> <span class="token punctuation">:</span> auto<span class="token selector">;
+
+    .super-flow__node</span> <span class="token punctuation">{</span>
+      <span class="token selector">.flow-node</span> <span class="token punctuation">{</span>
+        <span class="token property">width</span>       <span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+        <span class="token property">height</span>      <span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+        <span class="token property">line-height</span> <span class="token punctuation">:</span> 40px<span class="token punctuation">;</span>
+        <span class="token property">padding</span>     <span class="token punctuation">:</span> 0 6px<span class="token punctuation">;</span>
+        <span class="token property">font-size</span>   <span class="token punctuation">:</span> 12px<span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span>
+
+</code></pre></div></details> <h2 id="例二"><a href="#例二" class="header-anchor">#</a> 例二</h2> <div class="super-flow-demo2"><div class="super-flow" style="overflow:hidden;width:1000px;height:800px;"><!----><!----><div class="super-flow__menu-container"><div class="flow__menu-mask" style="display:none;"></div><ul tabindex="-1" class="super-flow__menu" style="left:0px;top:0px;display:none;"></ul></div><div tabindex="-1" class="select-all__mask" style="width:NaNpx;height:NaNpx;top:NaNpx;left:NaNpx;display:none;"></div></div></div> <details class="custom-block details"><summary>查看代码</summary> <div class="language-vue extra-class"><pre class="language-vue"><code><span class="token comment">&lt;!--
+ * User: CHT
+ * Date: 2020/5/27
+ * Time: 9:52
+--&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>super-flow-demo2<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>super-flow</span>
+      <span class="token attr-name">ref</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>superFlow<span class="token punctuation">&quot;</span></span>
+      <span class="token attr-name">:node-list</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>nodeList<span class="token punctuation">&quot;</span></span>
+      <span class="token attr-name">:link-list</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>linkList<span class="token punctuation">&quot;</span></span>
+      <span class="token attr-name">:width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>1000<span class="token punctuation">&quot;</span></span>
+      <span class="token attr-name">:height</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>800<span class="token punctuation">&quot;</span></span>
+      <span class="token attr-name">:origin</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>[782, 463]<span class="token punctuation">&quot;</span></span>
+      <span class="token attr-name">:graph-menu</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>graphMenuList<span class="token punctuation">&quot;</span></span>
+      <span class="token attr-name">:node-menu</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>nodeMenuList<span class="token punctuation">&quot;</span></span>
+      <span class="token attr-name">:link-menu</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>linkMenuList<span class="token punctuation">&quot;</span></span>
+      <span class="token attr-name">:enter-intercept</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>enterIntercept<span class="token punctuation">&quot;</span></span>
+      <span class="token attr-name">:output-intercept</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>outputIntercept<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span> <span class="token attr-name"><span class="token namespace">v-slot:</span>node</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>{meta}<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">:class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>`flow-node flow-node-${meta.prop}`<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>header</span><span class="token punctuation">&gt;</span></span>
+            {{meta.name}}
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>header</span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>section</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>section</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+      <span class="token comment">&lt;!--      &lt;template v-slot:menuItem=&quot;{item}&quot;&gt;--&gt;</span>
+      <span class="token comment">&lt;!--        &lt;span&gt;{{item.label}}&lt;/span&gt;--&gt;</span>
+      <span class="token comment">&lt;!--      &lt;/template&gt;--&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>super-flow</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+  <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+    <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token punctuation">{</span>
+        nodeList<span class="token operator">:</span> <span class="token punctuation">[</span>
+          <span class="token punctuation">{</span>
+            id<span class="token operator">:</span> <span class="token string">'nodeni9QOqT3mI7hsMau'</span><span class="token punctuation">,</span>
+            width<span class="token operator">:</span> <span class="token number">200</span><span class="token punctuation">,</span>
+            height<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
+            coordinate<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">442</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">283</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            meta<span class="token operator">:</span> <span class="token punctuation">{</span>
+              prop<span class="token operator">:</span> <span class="token string">'condition'</span><span class="token punctuation">,</span>
+              name<span class="token operator">:</span> <span class="token string">'条件节点'</span>
+            <span class="token punctuation">}</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            id<span class="token operator">:</span> <span class="token string">'node7WXbwOR6kSFD53Hf'</span><span class="token punctuation">,</span>
+            width<span class="token operator">:</span> <span class="token number">200</span><span class="token punctuation">,</span>
+            height<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
+            coordinate<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">442</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">133</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            meta<span class="token operator">:</span> <span class="token punctuation">{</span>
+              prop<span class="token operator">:</span> <span class="token string">'condition'</span><span class="token punctuation">,</span>
+              name<span class="token operator">:</span> <span class="token string">'条件节点'</span>
+            <span class="token punctuation">}</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            id<span class="token operator">:</span> <span class="token string">'nodeG3WeFnzCI15X58Qw'</span><span class="token punctuation">,</span>
+            width<span class="token operator">:</span> <span class="token number">200</span><span class="token punctuation">,</span>
+            height<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
+            coordinate<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">442</span><span class="token punctuation">,</span> <span class="token number">17</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            meta<span class="token operator">:</span> <span class="token punctuation">{</span>
+              prop<span class="token operator">:</span> <span class="token string">'condition'</span><span class="token punctuation">,</span>
+              name<span class="token operator">:</span> <span class="token string">'条件节点'</span>
+            <span class="token punctuation">}</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            id<span class="token operator">:</span> <span class="token string">'nodeS3WgFnzCI15X58Qw'</span><span class="token punctuation">,</span>
+            width<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
+            height<span class="token operator">:</span> <span class="token number">80</span><span class="token punctuation">,</span>
+            coordinate<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">642</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">123</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            meta<span class="token operator">:</span> <span class="token punctuation">{</span>
+              prop<span class="token operator">:</span> <span class="token string">'start'</span><span class="token punctuation">,</span>
+              name<span class="token operator">:</span> <span class="token string">'开始节点'</span>
+            <span class="token punctuation">}</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            id<span class="token operator">:</span> <span class="token string">'nodeZBK0ZPpgMe1exezE'</span><span class="token punctuation">,</span>
+            width<span class="token operator">:</span> <span class="token number">200</span><span class="token punctuation">,</span>
+            height<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
+            coordinate<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">142</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">283</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            meta<span class="token operator">:</span> <span class="token punctuation">{</span>
+              prop<span class="token operator">:</span> <span class="token string">'approval'</span><span class="token punctuation">,</span>
+              name<span class="token operator">:</span> <span class="token string">'审批节点'</span>
+            <span class="token punctuation">}</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            id<span class="token operator">:</span> <span class="token string">'nodefHsy9uJObPtdHZv1'</span><span class="token punctuation">,</span>
+            width<span class="token operator">:</span> <span class="token number">200</span><span class="token punctuation">,</span>
+            height<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
+            coordinate<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">142</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">133</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            meta<span class="token operator">:</span> <span class="token punctuation">{</span>
+              prop<span class="token operator">:</span> <span class="token string">'approval'</span><span class="token punctuation">,</span>
+              name<span class="token operator">:</span> <span class="token string">'审批节点'</span>
+            <span class="token punctuation">}</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            id<span class="token operator">:</span> <span class="token string">'node0aiA9VuhjkiAdZCs'</span><span class="token punctuation">,</span>
+            width<span class="token operator">:</span> <span class="token number">200</span><span class="token punctuation">,</span>
+            height<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
+            coordinate<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">142</span><span class="token punctuation">,</span> <span class="token number">17</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            meta<span class="token operator">:</span> <span class="token punctuation">{</span>
+              prop<span class="token operator">:</span> <span class="token string">'approval'</span><span class="token punctuation">,</span>
+              name<span class="token operator">:</span> <span class="token string">'审批节点'</span>
+            <span class="token punctuation">}</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            id<span class="token operator">:</span> <span class="token string">'nodeqkK9zjcDz53xKRlK'</span><span class="token punctuation">,</span>
+            width<span class="token operator">:</span> <span class="token number">200</span><span class="token punctuation">,</span>
+            height<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
+            coordinate<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">158</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">208</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            meta<span class="token operator">:</span> <span class="token punctuation">{</span>
+              prop<span class="token operator">:</span> <span class="token string">'cc'</span><span class="token punctuation">,</span>
+              name<span class="token operator">:</span> <span class="token string">'抄送节点'</span>
+            <span class="token punctuation">}</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            id<span class="token operator">:</span> <span class="token string">'nodeDhVU6w2KbEnJCjZs'</span><span class="token punctuation">,</span>
+            width<span class="token operator">:</span> <span class="token number">80</span><span class="token punctuation">,</span>
+            height<span class="token operator">:</span> <span class="token number">50</span><span class="token punctuation">,</span>
+            coordinate<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">458</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">108</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            meta<span class="token operator">:</span> <span class="token punctuation">{</span>
+              prop<span class="token operator">:</span> <span class="token string">'end'</span><span class="token punctuation">,</span>
+              name<span class="token operator">:</span> <span class="token string">'结束节点'</span>
+            <span class="token punctuation">}</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            id<span class="token operator">:</span> <span class="token string">'nodesyxisLH1hJDdPsxx'</span><span class="token punctuation">,</span>
+            width<span class="token operator">:</span> <span class="token number">200</span><span class="token punctuation">,</span>
+            height<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
+            coordinate<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">158</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">58</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            meta<span class="token operator">:</span> <span class="token punctuation">{</span>
+              prop<span class="token operator">:</span> <span class="token string">'cc'</span><span class="token punctuation">,</span>
+              name<span class="token operator">:</span> <span class="token string">'抄送节点'</span>
+            <span class="token punctuation">}</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        linkList<span class="token operator">:</span> <span class="token punctuation">[</span>
+          <span class="token punctuation">{</span>
+            id<span class="token operator">:</span> <span class="token string">'linkQfGI6apBdZm4qHe3'</span><span class="token punctuation">,</span>
+            startId<span class="token operator">:</span> <span class="token string">'nodeS3WgFnzCI15X58Qw'</span><span class="token punctuation">,</span>
+            endId<span class="token operator">:</span> <span class="token string">'nodeni9QOqT3mI7hsMau'</span><span class="token punctuation">,</span>
+            startAt<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">100</span><span class="token punctuation">,</span> <span class="token number">40</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            endAt<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">50</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            meta<span class="token operator">:</span> <span class="token keyword">null</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            id<span class="token operator">:</span> <span class="token string">'linkJalC4dAzpQfu5WMi'</span><span class="token punctuation">,</span>
+            startId<span class="token operator">:</span> <span class="token string">'nodeS3WgFnzCI15X58Qw'</span><span class="token punctuation">,</span>
+            endId<span class="token operator">:</span> <span class="token string">'node7WXbwOR6kSFD53Hf'</span><span class="token punctuation">,</span>
+            startAt<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">100</span><span class="token punctuation">,</span> <span class="token number">40</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            endAt<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">50</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            meta<span class="token operator">:</span> <span class="token keyword">null</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            id<span class="token operator">:</span> <span class="token string">'linkjUVmbLfRhxPfFISJ'</span><span class="token punctuation">,</span>
+            startId<span class="token operator">:</span> <span class="token string">'nodeS3WgFnzCI15X58Qw'</span><span class="token punctuation">,</span>
+            endId<span class="token operator">:</span> <span class="token string">'nodeG3WeFnzCI15X58Qw'</span><span class="token punctuation">,</span>
+            startAt<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">100</span><span class="token punctuation">,</span> <span class="token number">40</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            endAt<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">50</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            meta<span class="token operator">:</span> <span class="token keyword">null</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            id<span class="token operator">:</span> <span class="token string">'linkP3zJNvSKHutesZs4'</span><span class="token punctuation">,</span>
+            startId<span class="token operator">:</span> <span class="token string">'nodeni9QOqT3mI7hsMau'</span><span class="token punctuation">,</span>
+            endId<span class="token operator">:</span> <span class="token string">'nodeZBK0ZPpgMe1exezE'</span><span class="token punctuation">,</span>
+            startAt<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">200</span><span class="token punctuation">,</span> <span class="token number">50</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            endAt<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">50</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            meta<span class="token operator">:</span> <span class="token keyword">null</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            id<span class="token operator">:</span> <span class="token string">'linkYlzpeKssBYwxQdLr'</span><span class="token punctuation">,</span>
+            startId<span class="token operator">:</span> <span class="token string">'node7WXbwOR6kSFD53Hf'</span><span class="token punctuation">,</span>
+            endId<span class="token operator">:</span> <span class="token string">'nodefHsy9uJObPtdHZv1'</span><span class="token punctuation">,</span>
+            startAt<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">200</span><span class="token punctuation">,</span> <span class="token number">50</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            endAt<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">50</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            meta<span class="token operator">:</span> <span class="token keyword">null</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            id<span class="token operator">:</span> <span class="token string">'linkOwoUKiipYyVz3CYT'</span><span class="token punctuation">,</span>
+            startId<span class="token operator">:</span> <span class="token string">'nodeG3WeFnzCI15X58Qw'</span><span class="token punctuation">,</span>
+            endId<span class="token operator">:</span> <span class="token string">'node0aiA9VuhjkiAdZCs'</span><span class="token punctuation">,</span>
+            startAt<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">200</span><span class="token punctuation">,</span> <span class="token number">50</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            endAt<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">50</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            meta<span class="token operator">:</span> <span class="token keyword">null</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            id<span class="token operator">:</span> <span class="token string">'link3UhFce4rO4TfAL2K'</span><span class="token punctuation">,</span>
+            startId<span class="token operator">:</span> <span class="token string">'nodeZBK0ZPpgMe1exezE'</span><span class="token punctuation">,</span>
+            endId<span class="token operator">:</span> <span class="token string">'nodeqkK9zjcDz53xKRlK'</span><span class="token punctuation">,</span>
+            startAt<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">200</span><span class="token punctuation">,</span> <span class="token number">50</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            endAt<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">50</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            meta<span class="token operator">:</span> <span class="token keyword">null</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            id<span class="token operator">:</span> <span class="token string">'linkMjaKIDuDfbgqSHoz'</span><span class="token punctuation">,</span>
+            startId<span class="token operator">:</span> <span class="token string">'nodefHsy9uJObPtdHZv1'</span><span class="token punctuation">,</span>
+            endId<span class="token operator">:</span> <span class="token string">'nodeqkK9zjcDz53xKRlK'</span><span class="token punctuation">,</span>
+            startAt<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">200</span><span class="token punctuation">,</span> <span class="token number">50</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            endAt<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">50</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            meta<span class="token operator">:</span> <span class="token keyword">null</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            id<span class="token operator">:</span> <span class="token string">'linkdUBf9aeOoXR3X65Y'</span><span class="token punctuation">,</span>
+            startId<span class="token operator">:</span> <span class="token string">'node0aiA9VuhjkiAdZCs'</span><span class="token punctuation">,</span>
+            endId<span class="token operator">:</span> <span class="token string">'nodesyxisLH1hJDdPsxx'</span><span class="token punctuation">,</span>
+            startAt<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">200</span><span class="token punctuation">,</span> <span class="token number">50</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            endAt<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">50</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            meta<span class="token operator">:</span> <span class="token keyword">null</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            id<span class="token operator">:</span> <span class="token string">'link02lGIqBJZWrTlCFv'</span><span class="token punctuation">,</span>
+            startId<span class="token operator">:</span> <span class="token string">'nodeqkK9zjcDz53xKRlK'</span><span class="token punctuation">,</span>
+            endId<span class="token operator">:</span> <span class="token string">'nodeDhVU6w2KbEnJCjZs'</span><span class="token punctuation">,</span>
+            startAt<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">200</span><span class="token punctuation">,</span> <span class="token number">50</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            endAt<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">25</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            meta<span class="token operator">:</span> <span class="token keyword">null</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            id<span class="token operator">:</span> <span class="token string">'link3i9b2ZsNM8wyjRop'</span><span class="token punctuation">,</span>
+            startId<span class="token operator">:</span> <span class="token string">'nodesyxisLH1hJDdPsxx'</span><span class="token punctuation">,</span>
+            endId<span class="token operator">:</span> <span class="token string">'nodeDhVU6w2KbEnJCjZs'</span><span class="token punctuation">,</span>
+            startAt<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">200</span><span class="token punctuation">,</span> <span class="token number">50</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            endAt<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">25</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            meta<span class="token operator">:</span> <span class="token keyword">null</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        graphMenuList<span class="token operator">:</span> <span class="token punctuation">[</span>
+          <span class="token punctuation">[</span>
+            <span class="token punctuation">{</span>
+              label<span class="token operator">:</span> <span class="token string">'开始节点'</span><span class="token punctuation">,</span>
+              <span class="token function">disable</span><span class="token punctuation">(</span><span class="token parameter">graph</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token keyword">return</span> <span class="token operator">!</span><span class="token operator">!</span>graph<span class="token punctuation">.</span>nodeList<span class="token punctuation">.</span><span class="token function">find</span><span class="token punctuation">(</span><span class="token parameter">node</span> <span class="token operator">=&gt;</span> node<span class="token punctuation">.</span>meta<span class="token punctuation">.</span>prop <span class="token operator">===</span> <span class="token string">'start'</span><span class="token punctuation">)</span>
+              <span class="token punctuation">}</span><span class="token punctuation">,</span>
+              <span class="token function-variable function">selected</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token parameter">graph<span class="token punctuation">,</span> coordinate</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+                graph<span class="token punctuation">.</span><span class="token function">addNode</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+                  width<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
+                  height<span class="token operator">:</span> <span class="token number">80</span><span class="token punctuation">,</span>
+                  coordinate<span class="token operator">:</span> coordinate<span class="token punctuation">,</span>
+                  meta<span class="token operator">:</span> <span class="token punctuation">{</span>
+                    prop<span class="token operator">:</span> <span class="token string">'start'</span><span class="token punctuation">,</span>
+                    name<span class="token operator">:</span> <span class="token string">'开始节点'</span>
+                  <span class="token punctuation">}</span>
+                <span class="token punctuation">}</span><span class="token punctuation">)</span>
+              <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+              label<span class="token operator">:</span> <span class="token string">'条件节点'</span><span class="token punctuation">,</span>
+              disable<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+              <span class="token function-variable function">selected</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token parameter">graph<span class="token punctuation">,</span> coordinate</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+                graph<span class="token punctuation">.</span><span class="token function">addNode</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+                  width<span class="token operator">:</span> <span class="token number">200</span><span class="token punctuation">,</span>
+                  height<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
+                  coordinate<span class="token operator">:</span> coordinate<span class="token punctuation">,</span>
+                  meta<span class="token operator">:</span> <span class="token punctuation">{</span>
+                    prop<span class="token operator">:</span> <span class="token string">'condition'</span><span class="token punctuation">,</span>
+                    name<span class="token operator">:</span> <span class="token string">'条件节点'</span>
+                  <span class="token punctuation">}</span>
+                <span class="token punctuation">}</span><span class="token punctuation">)</span>
+              <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+              label<span class="token operator">:</span> <span class="token string">'审批节点'</span><span class="token punctuation">,</span>
+              disable<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+              <span class="token function-variable function">selected</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token parameter">graph<span class="token punctuation">,</span> coordinate</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+                graph<span class="token punctuation">.</span><span class="token function">addNode</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+                  width<span class="token operator">:</span> <span class="token number">200</span><span class="token punctuation">,</span>
+                  height<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
+                  coordinate<span class="token operator">:</span> coordinate<span class="token punctuation">,</span>
+                  meta<span class="token operator">:</span> <span class="token punctuation">{</span>
+                    prop<span class="token operator">:</span> <span class="token string">'approval'</span><span class="token punctuation">,</span>
+                    name<span class="token operator">:</span> <span class="token string">'审批节点'</span>
+                  <span class="token punctuation">}</span>
+                <span class="token punctuation">}</span><span class="token punctuation">)</span>
+              <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+              label<span class="token operator">:</span> <span class="token string">'抄送节点'</span><span class="token punctuation">,</span>
+              disable<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+              <span class="token function-variable function">selected</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token parameter">graph<span class="token punctuation">,</span> coordinate</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+                graph<span class="token punctuation">.</span><span class="token function">addNode</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+                  width<span class="token operator">:</span> <span class="token number">200</span><span class="token punctuation">,</span>
+                  height<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
+                  coordinate<span class="token operator">:</span> coordinate<span class="token punctuation">,</span>
+                  meta<span class="token operator">:</span> <span class="token punctuation">{</span>
+                    prop<span class="token operator">:</span> <span class="token string">'cc'</span><span class="token punctuation">,</span>
+                    name<span class="token operator">:</span> <span class="token string">'抄送节点'</span>
+                  <span class="token punctuation">}</span>
+                <span class="token punctuation">}</span><span class="token punctuation">)</span>
+              <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+              label<span class="token operator">:</span> <span class="token string">'结束节点'</span><span class="token punctuation">,</span>
+              <span class="token function">disable</span><span class="token punctuation">(</span><span class="token parameter">graph</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token keyword">return</span> <span class="token operator">!</span><span class="token operator">!</span>graph<span class="token punctuation">.</span>nodeList<span class="token punctuation">.</span><span class="token function">find</span><span class="token punctuation">(</span><span class="token parameter">point</span> <span class="token operator">=&gt;</span> point<span class="token punctuation">.</span>meta<span class="token punctuation">.</span>prop <span class="token operator">===</span> <span class="token string">'end'</span><span class="token punctuation">)</span>
+              <span class="token punctuation">}</span><span class="token punctuation">,</span>
+              <span class="token function-variable function">selected</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token parameter">graph<span class="token punctuation">,</span> coordinate</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+                graph<span class="token punctuation">.</span><span class="token function">addNode</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+                  width<span class="token operator">:</span> <span class="token number">80</span><span class="token punctuation">,</span>
+                  height<span class="token operator">:</span> <span class="token number">50</span><span class="token punctuation">,</span>
+                  coordinate<span class="token operator">:</span> coordinate<span class="token punctuation">,</span>
+                  meta<span class="token operator">:</span> <span class="token punctuation">{</span>
+                    prop<span class="token operator">:</span> <span class="token string">'end'</span><span class="token punctuation">,</span>
+                    name<span class="token operator">:</span> <span class="token string">'结束节点'</span>
+                  <span class="token punctuation">}</span>
+                <span class="token punctuation">}</span><span class="token punctuation">)</span>
+              <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+          <span class="token punctuation">]</span><span class="token punctuation">,</span>
+          <span class="token punctuation">[</span>
+            <span class="token punctuation">{</span>
+              label<span class="token operator">:</span> <span class="token string">'打印数据'</span><span class="token punctuation">,</span>
+              <span class="token function-variable function">selected</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token parameter">graph<span class="token punctuation">,</span> coordinate</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+                console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span>graph<span class="token punctuation">.</span><span class="token function">toJSON</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token keyword">null</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+              <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+              label<span class="token operator">:</span> <span class="token string">'全选'</span><span class="token punctuation">,</span>
+              <span class="token function-variable function">selected</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token parameter">graph<span class="token punctuation">,</span> coordinate</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+                graph<span class="token punctuation">.</span><span class="token function">selectAll</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+              <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+          <span class="token punctuation">]</span>
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        nodeMenuList<span class="token operator">:</span> <span class="token punctuation">[</span>
+          <span class="token punctuation">[</span>
+            <span class="token punctuation">{</span>
+              label<span class="token operator">:</span> <span class="token string">'删除'</span><span class="token punctuation">,</span>
+              disable<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+              <span class="token function">hidden</span><span class="token punctuation">(</span><span class="token parameter">node</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token keyword">return</span> node<span class="token punctuation">.</span>meta<span class="token punctuation">.</span>prop <span class="token operator">===</span> <span class="token string">'start'</span>
+              <span class="token punctuation">}</span><span class="token punctuation">,</span>
+              <span class="token function">selected</span><span class="token punctuation">(</span><span class="token parameter">node<span class="token punctuation">,</span> coordinate</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                node<span class="token punctuation">.</span><span class="token function">remove</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+              <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+          <span class="token punctuation">]</span>
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        linkMenuList<span class="token operator">:</span> <span class="token punctuation">[</span>
+          <span class="token punctuation">[</span>
+            <span class="token punctuation">{</span>
+              label<span class="token operator">:</span> <span class="token string">'删除'</span><span class="token punctuation">,</span>
+              disable<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+              <span class="token function">selected</span><span class="token punctuation">(</span><span class="token parameter">link<span class="token punctuation">,</span> coordinate</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                link<span class="token punctuation">.</span><span class="token function">remove</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+              <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+          <span class="token punctuation">]</span>
+        <span class="token punctuation">]</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    methods<span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token function">enterIntercept</span><span class="token punctuation">(</span><span class="token parameter">formNode<span class="token punctuation">,</span> toNode<span class="token punctuation">,</span> graph</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">const</span> formType <span class="token operator">=</span> formNode<span class="token punctuation">.</span>meta<span class="token punctuation">.</span>prop
+        <span class="token keyword">switch</span> <span class="token punctuation">(</span>toNode<span class="token punctuation">.</span>meta<span class="token punctuation">.</span>prop<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          <span class="token keyword">case</span> <span class="token string">'start'</span><span class="token operator">:</span>
+            <span class="token keyword">return</span> <span class="token boolean">false</span>
+          <span class="token keyword">case</span> <span class="token string">'approval'</span><span class="token operator">:</span>
+            <span class="token keyword">return</span> <span class="token punctuation">[</span>
+              <span class="token string">'start'</span><span class="token punctuation">,</span>
+              <span class="token string">'approval'</span><span class="token punctuation">,</span>
+              <span class="token string">'condition'</span><span class="token punctuation">,</span>
+              <span class="token string">'cc'</span>
+            <span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">includes</span><span class="token punctuation">(</span>formType<span class="token punctuation">)</span>
+          <span class="token keyword">case</span> <span class="token string">'condition'</span><span class="token operator">:</span>
+            <span class="token keyword">return</span> <span class="token punctuation">[</span>
+              <span class="token string">'start'</span><span class="token punctuation">,</span>
+              <span class="token string">'approval'</span><span class="token punctuation">,</span>
+              <span class="token string">'condition'</span><span class="token punctuation">,</span>
+              <span class="token string">'cc'</span>
+            <span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">includes</span><span class="token punctuation">(</span>formType<span class="token punctuation">)</span>
+          <span class="token keyword">case</span> <span class="token string">'end'</span><span class="token operator">:</span>
+            <span class="token keyword">return</span> <span class="token punctuation">[</span>
+              <span class="token string">'approval'</span><span class="token punctuation">,</span>
+              <span class="token string">'cc'</span>
+            <span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">includes</span><span class="token punctuation">(</span>formType<span class="token punctuation">)</span>
+          <span class="token keyword">default</span><span class="token operator">:</span>
+            <span class="token keyword">return</span> <span class="token boolean">true</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token function">outputIntercept</span><span class="token punctuation">(</span><span class="token parameter">node<span class="token punctuation">,</span> graph</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token operator">!</span><span class="token punctuation">(</span>node<span class="token punctuation">.</span>meta<span class="token punctuation">.</span>prop <span class="token operator">===</span> <span class="token string">'end'</span><span class="token punctuation">)</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>less<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token style"><span class="token language-css">
+  <span class="token selector">.super-flow-demo2</span> <span class="token punctuation">{</span>
+    <span class="token property">width</span>    <span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+    <span class="token property">height</span>   <span class="token punctuation">:</span> auto<span class="token punctuation">;</span>
+    <span class="token property">margin</span>   <span class="token punctuation">:</span> 0 auto<span class="token punctuation">;</span>
+    <span class="token property">overflow</span> <span class="token punctuation">:</span> auto<span class="token selector">;
+
+    .super-flow__node</span> <span class="token punctuation">{</span>
+      <span class="token selector">.flow-node</span> <span class="token punctuation">{</span>
+        <span class="token selector">&gt; header</span> <span class="token punctuation">{</span>
+          <span class="token property">font-size</span>   <span class="token punctuation">:</span> 14px<span class="token punctuation">;</span>
+          <span class="token property">height</span>      <span class="token punctuation">:</span> 32px<span class="token punctuation">;</span>
+          <span class="token property">line-height</span> <span class="token punctuation">:</span> 32px<span class="token punctuation">;</span>
+          <span class="token property">padding</span>     <span class="token punctuation">:</span> 0 12px<span class="token punctuation">;</span>
+          <span class="token property">color</span>       <span class="token punctuation">:</span> #ffffff<span class="token punctuation">;</span>
+
+        <span class="token punctuation">}</span>
+
+        <span class="token selector">&amp;.flow-node-start</span> <span class="token punctuation">{</span>
+          <span class="token selector">&gt; header</span> <span class="token punctuation">{</span>
+            <span class="token property">background-color</span> <span class="token punctuation">:</span> #55abfc<span class="token punctuation">;</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token selector">&amp;.flow-node-condition</span> <span class="token punctuation">{</span>
+          <span class="token selector">&gt; header</span> <span class="token punctuation">{</span>
+            <span class="token property">background-color</span> <span class="token punctuation">:</span> #BC1D16<span class="token punctuation">;</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token selector">&amp;.flow-node-approval</span> <span class="token punctuation">{</span>
+          <span class="token selector">&gt; header</span> <span class="token punctuation">{</span>
+            <span class="token property">background-color</span> <span class="token punctuation">:</span> <span class="token function">rgba</span><span class="token punctuation">(</span>188<span class="token punctuation">,</span> 181<span class="token punctuation">,</span> 58<span class="token punctuation">,</span> 0.76<span class="token punctuation">)</span><span class="token punctuation">;</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token selector">&amp;.flow-node-cc</span> <span class="token punctuation">{</span>
+          <span class="token selector">&gt; header</span> <span class="token punctuation">{</span>
+            <span class="token property">background-color</span> <span class="token punctuation">:</span> #30b95c<span class="token punctuation">;</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token selector">&amp;.flow-node-end</span> <span class="token punctuation">{</span>
+          <span class="token selector">&gt; header</span> <span class="token punctuation">{</span>
+            <span class="token property">height</span>           <span class="token punctuation">:</span> 50px<span class="token punctuation">;</span>
+            <span class="token property">line-height</span>      <span class="token punctuation">:</span> 50px<span class="token punctuation">;</span>
+            <span class="token property">background-color</span> <span class="token punctuation">:</span> <span class="token function">rgb</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">)</span><span class="token punctuation">;</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span>
+
+</code></pre></div></details> <br> <br></div> <!----></main></div><div class="global-ui"></div></div>
+<script src="/assets/js/app.0546b67a.js" defer></script><script src="/assets/js/2.fd4c93ce.js" defer></script><script src="/assets/js/8.6e77e016.js" defer></script><script src="/assets/js/4.a184daa4.js" defer></script><script src="/assets/js/3.4801a644.js" defer></script>
 </body>
 </html>

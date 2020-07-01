@@ -5,8 +5,10 @@ sidebar: auto
 
 # 使用说明
 
-<br>
-<br>
+
+## 介绍
+
+ Vue-super-flow 是基于vue 开发的一款生成、预览流程图的组件。使用者可以根据不同的需求对图、节点、连线进行细致的控制。
 
 ## 安装
 ```shell script
@@ -16,9 +18,6 @@ npm install vue-super-flow
 yran add vue-spuer-flow
 
 ```
-
-<br>
-<br>
 
 ## 使用
 
@@ -31,9 +30,6 @@ Vue.use(SuperFlow)
 
 ```
 
-<br>
-<br>
-
 ## 属性
 
 ### width            
@@ -41,27 +37,24 @@ Vue.use(SuperFlow)
  - 类型： `Number`        
  - 默认值：`1000`                   
                         
-::: tip 说明
 `graph` 的宽度
-:::
 
 ### height           
    
  - 类型： `Number`           
  - 默认值：`8000`                   
  
-::: tip 说明
 `graph` 的高度   
-:::
 
- 
 ### draggable        
    
  - 类型：`Boolean`          
  - 默认值：`true`                   
  
+是否开启节点拖拽    
+ 
 ::: tip 说明
-是否开启节点拖拽   
+可以通过传入 `false` 禁止掉节点的拖拽
 :::
                      
  
@@ -71,8 +64,10 @@ Vue.use(SuperFlow)
  - 类型：`Boolean`         
  - 默认值：`true`                   
  
+是否开启节点边缘拖拽创建 `link`  
+ 
 ::: tip 说明
-是否开启快捷创建 `link`   
+传入 `false` 后节点将无法拖拽出连接线。区域于 
 :::
            
  
@@ -162,8 +157,118 @@ Vue.use(SuperFlow)
  - 默认值：`[]`                     
 
 ::: tip 说明
-`graph` 的右键菜单列表配置   
+
+`graphMenu` 是对 `graph` 的右键菜单列表配置；
+
+根据需要定制菜单,并可通过 插槽 [menuItem](#menuitem) 来决定菜单如何渲染
+    
 :::     
+
+|           |               |           |
+|----       | ----          |----       |
+
+::: details 查看示例
+```js
+[
+  [
+    {
+      label: '开始节点',
+      disable(graph) {
+        return !!graph.nodeList.find(node => node.meta.prop === 'start')
+      },
+      selected: (graph, coordinate) => {
+        graph.addNode({
+          width: 100,
+          height: 80,
+          coordinate: coordinate,
+          meta: {
+            prop: 'start',
+            name: '开始节点'
+          }
+        })
+      }
+    },
+    {
+      label: '条件节点',
+      disable: false,
+      selected: (graph, coordinate) => {
+        graph.addNode({
+          width: 200,
+          height: 100,
+          coordinate: coordinate,
+          meta: {
+            prop: 'condition',
+            name: '条件节点'
+          }
+        })
+      }
+    },
+    {
+      label: '审批节点',
+      disable: false,
+      selected: (graph, coordinate) => {
+        graph.addNode({
+          width: 200,
+          height: 100,
+          coordinate: coordinate,
+          meta: {
+            prop: 'approval',
+            name: '审批节点'
+          }
+        })
+      }
+    },
+    {
+      label: '抄送节点',
+      disable: false,
+      selected: (graph, coordinate) => {
+        graph.addNode({
+          width: 200,
+          height: 100,
+          coordinate: coordinate,
+          meta: {
+            prop: 'cc',
+            name: '抄送节点'
+          }
+        })
+      }
+    },
+    {
+      label: '结束节点',
+      disable(graph) {
+        return !!graph.nodeList.find(point => point.meta.prop === 'end')
+      },
+      selected: (graph, coordinate) => {
+        graph.addNode({
+          width: 80,
+          height: 50,
+          coordinate: coordinate,
+          meta: {
+            prop: 'end',
+            name: '结束节点'
+          }
+        })
+      }
+    }
+  ],
+  [
+    {
+      label: '打印数据',
+      selected: (graph, coordinate) => {
+        console.log(JSON.stringify(graph.toJSON(), null, 2))
+      }
+    },
+    {
+      label: '全选',
+      selected: (graph, coordinate) => {
+        graph.selectAll()
+      }
+    }
+  ]
+]
+```
+:::
+
 
 
 ### nodeMenu          
@@ -245,3 +350,13 @@ Vue.use(SuperFlow)
 
 <br>
 <br>
+
+## 插槽
+
+### node
+
+- 控制节点渲染
+
+### menuItem
+
+- 控制菜单单项渲染

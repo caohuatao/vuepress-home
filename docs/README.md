@@ -1,10 +1,10 @@
 ---
 home: true
 heroText: Vue super flow
-tagline: 快速方便实现流程图
+tagline: 快速、方便、高度自由的流程图实现方案。
 actionText: 快速上手 →
 actionLink: /guide/
-footer: MIT Licensed | Copyright © 2020 | 351995664@qq.com
+footer: MIT Licensed | Copyright © 2020
 ---
 
 <br/>

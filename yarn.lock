@@ -7451,10 +7451,10 @@ vue-style-loader@^4.1.0:
     hash-sum "^1.0.2"
     loader-utils "^1.0.2"
 
-vue-super-flow@^1.2.5:
-  version "1.2.5"
-  resolved "https://registry.yarnpkg.com/vue-super-flow/-/vue-super-flow-1.2.5.tgz#9bc9ea98eeb5f1f41fbbab4275fb931d887e15a0"
-  integrity sha512-R+JVSLRr2d5hdaQ8rpOAhmrXMQwtTC3bu0VhPM1u+7CHkzWR8QMmtdUv320lPnM1xZmmgHnhmqoSY2rvHD/jng==
+vue-super-flow@^1.3.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/vue-super-flow/-/vue-super-flow-1.3.0.tgz#a7de7d5f8e206abd35bdd8e5362e2815db34ff67"
+  integrity sha512-CUVl8kMKDKO56K8nSlJwIz+IuabN/RVF7mLSkQWgvCDq94YNEf9yRCjvigspP1766v4Rb6bLdjho8XB5J555pA==
 
 vue-template-compiler@^2.6.10:
   version "2.6.11"

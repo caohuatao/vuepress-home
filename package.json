@@ -4,7 +4,7 @@
   "description": "'Vue-super-flow'",
   "scripts": {
     "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs && npm run push",
+    "docs:build": "vuepress build docs",
     "push": "node ./deploy.js"
   },
   "author": "",
@@ -15,7 +15,7 @@
   "dependencies": {
     "less-loader": "^6.1.2",
     "shelljs": "^0.8.4",
-    "vue-super-flow": "^1.2.5",
+    "vue-super-flow": "^1.3.0",
     "vuepress": "^1.5.0"
   }
 }
