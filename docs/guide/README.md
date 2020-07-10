@@ -32,31 +32,12 @@ Vue.use(SuperFlow)
 
 ## 属性
 
-### width            
-  
- - 类型： `Number`        
- - 默认值：`1000`                   
-                        
-`graph` 的宽度
-
-### height           
-   
- - 类型： `Number`           
- - 默认值：`8000`                   
- 
-`graph` 的高度   
-
 ### draggable        
    
  - 类型：`Boolean`          
  - 默认值：`true`                   
  
-是否开启节点拖拽    
- 
-::: tip 说明
-可以通过传入 `false` 禁止掉节点的拖拽
-:::
-                     
+是否开启节点拖拽移动坐标    
  
  
 ### linkAddable         
@@ -64,21 +45,15 @@ Vue.use(SuperFlow)
  - 类型：`Boolean`         
  - 默认值：`true`                   
  
-是否开启节点边缘拖拽创建 `link`  
+是否开启节点边缘拖拽可创建连线  
  
-::: tip 说明
-传入 `false` 后节点将无法拖拽出连接线。区域于 
-:::
-           
- 
+
 ### linkEditable        
 
  - 类型：`Boolean`          
  - 默认值：`true`                   
 
-::: tip 说明
-`link` 是否可编辑     
-:::
+连线是否可编辑
 
 
 ### hasMarkLine         
@@ -86,9 +61,7 @@ Vue.use(SuperFlow)
  - 类型：`Boolean`          
  - 默认值：`true`        
             
-::: tip 说明
-是否开启拖拽辅助线   
-:::
+是否开启辅助线
                      
 
 ### lineColor       
@@ -96,9 +69,7 @@ Vue.use(SuperFlow)
  - 类型：`String`           
  - 默认值：`#666666`                
 
-::: tip 说明
-连线颜色          
-:::
+连线颜色
                      
 
 ### onLineColor         
@@ -106,9 +77,7 @@ Vue.use(SuperFlow)
  - 类型：`String`           
  - 默认值：`#FF0000`                
  
-::: tip 说明
-鼠标靠近连线时颜色         
-::: 
+鼠标悬停连线时颜色 
                  
 
 ### markLineColor     
@@ -116,19 +85,14 @@ Vue.use(SuperFlow)
  - 类型：`String`           
  - 默认值：`#55abfc`                
 
-::: tip 说明
-辅助线颜色           
-:::  
-                        
+辅助节点对齐辅助线的颜色                        
 
 ### origin     
          
  - 类型：`Array`            
  - 默认值：`[0, 0]`                 
  
-::: tip 说明
-`graph` 的二维坐标系原点            
-:::   
+`graph` 的二维坐标系原点   
                
 
 ### nodeList    
@@ -136,9 +100,7 @@ Vue.use(SuperFlow)
  - 类型：`Array`            
  - 默认值：`[]`                     
 
-::: tip 说明
- 初始化节点列表           
-:::   
+ 初始化节点列表    
 
 
 ### linkList    
@@ -146,9 +108,7 @@ Vue.use(SuperFlow)
  - 类型：`Array`        
  - 默认值：`[]`                     
 
-::: tip 说明
-初始化连线列表     
-:::    
+初始化连线列表   
 
 
 ### graphMenu    
@@ -164,18 +124,19 @@ Vue.use(SuperFlow)
     
 :::     
 
-|           |               |           |
-|----       | ----          |----       |
 
 ::: details 查看示例
 ```js
 [
   [
     {
-      label: '开始节点',
-      disable(graph) {
+      // 菜单文案
+      label: '开始节点',           // 菜单文案
+      // 是否禁用
+      disable(graph) {          
         return !!graph.nodeList.find(node => node.meta.prop === 'start')
       },
+      // 菜单项选中时回调
       selected: (graph, coordinate) => {
         graph.addNode({
           width: 100,
@@ -274,11 +235,9 @@ Vue.use(SuperFlow)
 ### nodeMenu          
   
  - 类型：`Array`          
- - 默认值：`[]`                     
-
-::: tip 说明
-`node` 右键菜单列表配置       
-:::        
+ - 默认值：`[]`          
+            
+`node` 右键菜单配置       
 
 
 ### linkMenu            
@@ -286,9 +245,7 @@ Vue.use(SuperFlow)
  - 类型：`Array`            
  - 默认值：`[]`                     
 
-::: tip 说明
- `link` 右键菜单配置         
-:::                 
+ `link` 右键菜单              
 
 
 ### enterIntercept      
@@ -296,18 +253,59 @@ Vue.use(SuperFlow)
  - 类型：`Function`        
  - 默认值：`() => true`             
    
-::: tip 说明
-创建连线进入节点限制         
-:::      
+连线进入节点限制函数 接受 `boolean` 返回值 
+
+::: details 查看示例
+```js
+methods: {
+    enterIntercept(formNode, toNode, graph) {
+      const formType = formNode.meta.prop
+      switch (toNode.meta.prop) {
+        case 'start':
+          return false
+        case 'approval':
+          return [
+            'start',
+            'approval',
+            'condition',
+            'cc'
+          ].includes(formType)
+        case 'condition':
+          return [
+            'start',
+            'approval',
+            'condition',
+            'cc'
+          ].includes(formType)
+        case 'end':
+          return [
+            'approval',
+            'cc'
+          ].includes(formType)
+        default:
+          return true
+      }
+    }
+}
+```
+:::    
 
 ### outputIntercept    
  
  - 类型：`Function`         
  - 默认值：`() => true`             
  
-::: tip 说明
-节点生成连线限制           
-:::      
+节点生成连线限制 接受 `boolean` 返回值             
+
+::: details 查看示例
+```js
+methods: {
+  outputIntercept(node, graph) {
+    return !(node.meta.prop === 'end')
+  }
+}
+```
+::: 
 
 <br>
 <br>
@@ -318,35 +316,26 @@ Vue.use(SuperFlow)
 
 - 参数: ``
 
-:::tip 说明
 选中所有进行拖拽修改 `origin`
-:::
 
 
 ### toJSON
 
 - 参数: ``
 
-:::tip 说明
 将 `graph` 对象转为普通 `json` 对象并返回
-:::
 
 ### getMouseCoordinate
 
 - 参数: `clientX, clientY`
 
-:::tip 说明
 获取当前鼠标在 `graph` 坐标系的坐标
-:::
-
 
 ### addNode
 
 - 参数: `options`
 
-:::tip 说明
-新增节点
-:::
+新增节点函数
 
 <br>
 <br>
