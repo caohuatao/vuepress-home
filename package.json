@@ -4,7 +4,7 @@
   "description": "'Vue-super-flow'",
   "scripts": {
     "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs",
+    "docs:build": "vuepress build docs && npm run push",
     "push": "node ./deploy.js"
   },
   "author": "",
