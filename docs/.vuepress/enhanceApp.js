@@ -5,6 +5,10 @@
  */
 // 使用异步函数也是可以的
 import VueSuperFlow from 'vue-super-flow'
+
+import ElementUI from 'element-ui'
+
+import 'element-ui/lib/theme-chalk/index.css'
 import 'vue-super-flow/lib/index.css'
 
 export default (props) => {
@@ -18,4 +22,5 @@ export default (props) => {
   // ...做一些其他的应用级别的优化
   
   Vue.use(VueSuperFlow)
+  Vue.use(ElementUI)
 }

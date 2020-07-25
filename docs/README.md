@@ -12,11 +12,10 @@ footer: MIT Licensed | Copyright © 2020
 
 ## 当前版本
 ```
-v1.3.0
+v1.3.3
 ```
 
 ## 安装
-
 ```shell script
 
 npm install vue-super-flow
@@ -25,13 +24,29 @@ yran add vue-spuer-flow
 
 ```
 
-## 使用
+## 全局引用
 
 ```js
 
-import VueSuperFlow from 'vue-super-flow'
+import SuperFlow from 'vue-super-flow'
 import 'vue-super-flow/lib/index.css'
 
-Vue.use(VueSuperFlow)
+Vue.use(SuperFlow)
 
+```
+
+## 局部引用
+
+```vue
+<template>
+  <super-flow></super-flow>
+</template>
+
+<script >
+  import SuperFlow from 'vue-super-flow' 
+  import 'vue-super-flow/lib/index.css'
+  export default {
+    components: {SuperFlow}   
+  } 
+</script>
 ```

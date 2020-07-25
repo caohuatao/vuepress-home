@@ -19,7 +19,7 @@ yran add vue-spuer-flow
 
 ```
 
-## 使用
+## 全局引用
 
 ```js
 
@@ -28,6 +28,22 @@ import 'vue-super-flow/lib/index.css'
 
 Vue.use(SuperFlow)
 
+```
+
+## 局部引用
+
+```vue
+<template>
+  <super-flow></super-flow>
+</template>
+
+<script >
+  import SuperFlow from 'vue-super-flow' 
+  import 'vue-super-flow/lib/index.css'
+  export default {
+    components: {SuperFlow}   
+  } 
+</script>
 ```
 
 ## 属性
@@ -53,7 +69,7 @@ Vue.use(SuperFlow)
  - 类型：`Boolean`          
  - 默认值：`true`                   
 
-连线是否可编辑
+连线是否触发 hover 并调用右键菜单
 
 
 ### hasMarkLine         
@@ -64,21 +80,73 @@ Vue.use(SuperFlow)
 是否开启辅助线
                      
 
-### lineColor       
+### linkDesc       
     
- - 类型：`String`           
- - 默认值：`#666666`                
+ - 类型：`Function`           
+ - 默认值：`null`                
 
-连线颜色
+生成 `link` 定制描述文字  
+                     
+```js
+function linkDesc(link) {
+   /**
+     根据 link 对象的属性判断定制连线描述
+   */
+   return link.meta ? link.meta.info : ''
+}
+```                     
                      
 
-### onLineColor         
+### linkStyle         
 
- - 类型：`String`           
- - 默认值：`#FF0000`                
+ - 类型：`Function`           
+ - 默认值：`null`                
  
-鼠标悬停连线时颜色 
-                 
+根据 `link` 定制样式 
+可选属性参考：[linkBaseStyle](#linkBaseStyle)
+                   
+```js
+function linkStyle(link) {
+   /**
+     根据 link 对象的属性判断定制连线样式
+   */
+   return {
+      // ...
+   }
+}
+```                                 
+
+### linkBaseStyle
+
+ - 类型：`Object`           
+ - 默认值：`{}`     
+ 
+ 连线默认样式配置 
+ 
+```json5
+/*
+// 内置默认样式配置
+{
+   hover: '#FF0000',        // 连线 hover 时颜色
+   color: '#666666',        // 连线颜色
+   textColor: '#666666',    // 连线描述文字颜色
+   textHover: '#FF0000',    // 连线 hover 时描述文字颜色
+   font: '14px Arial',      // 连线 描述文字
+   dotted: false,           // 连线 是否是虚线
+   lineDash: [4, 4],        // 为虚线时 虚线参数
+   background: 'rgba(255,255,255,0.6)'  // 描述文字背景  
+}
+*/
+
+
+{
+  // ... 可选属性 参考内置默认样式 用来覆盖连线样式的默认值
+}
+```
+
+参考：
+[canvas font](https://developer.mozilla.org/zh-CN/docs/Web/API/CanvasRenderingContext2D/font)
+[lineDash](https://developer.mozilla.org/zh-CN/docs/Web/API/CanvasRenderingContext2D/setLineDash)    
 
 ### markLineColor     
   

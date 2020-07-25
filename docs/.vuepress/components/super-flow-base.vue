@@ -4,12 +4,12 @@
  * Time: 9:52
 -->
 <template>
-  <div class="super-flow-demo2">
+  <div class="super-flow-base-demo">
     <super-flow
       ref="superFlow"
       :node-list="nodeList"
       :link-list="linkList"
-      :origin="[782, 463]"
+      :origin="origin"
       :graph-menu="graphMenuList"
       :node-menu="nodeMenuList"
       :link-menu="linkMenuList"
@@ -27,15 +27,41 @@
       <!--        <span>{{item.label}}</span>-->
       <!--      </template>-->
     </super-flow>
+
+    <el-drawer
+      title="我是标题"
+      :visible.sync="drawerConf.visible"
+      :with-header="false">
+      <span>我来啦!</span>
+    </el-drawer>
   </div>
 </template>
 
 <script>
+
+  const drawerType = {
+    node: 0,
+    link: 1
+  }
+
   export default {
     data() {
       return {
+        drawerConf: {
+          visible: false,
+          type: null,
+          info: null,
+          open: (type, info) => {
+            const that = this.drawerConf
+            that.visible = true
+            that.type = type
+            that.info = info
+          }
+        },
+        origin: [782, 463],
         nodeList: [],
         linkList: [],
+
         graphMenuList: [
           [
             {
@@ -44,15 +70,18 @@
                 return !!graph.nodeList.find(node => node.meta.prop === 'start')
               },
               selected: (graph, coordinate) => {
-                graph.addNode({
-                  width: 100,
-                  height: 80,
-                  coordinate: coordinate,
-                  meta: {
-                    prop: 'start',
-                    name: '开始节点'
-                  }
-                })
+                const start = graph.nodeList.find(node => node.meta.prop === 'start')
+                if (!start) {
+                  graph.addNode({
+                    width: 100,
+                    height: 80,
+                    coordinate: coordinate,
+                    meta: {
+                      prop: 'start',
+                      name: '开始节点'
+                    }
+                  })
+                }
               }
             },
             {
@@ -143,6 +172,13 @@
               },
               selected(node, coordinate) {
                 node.remove()
+              }
+            },
+            {
+              label: '编辑',
+              selected: (node, coordinate) => {
+                this.drawerConf.open(drawerType.node, node)
+                console.log(this.origin)
               }
             }
           ]
@@ -354,10 +390,10 @@
         }
       ]
 
-      setTimeout(()=>{
+      setTimeout(() => {
         this.nodeList = nodeList
         this.linkList = linkList
-      }, 3000)
+      }, 100)
     },
     methods: {
       enterIntercept(formNode, toNode, graph) {
@@ -396,7 +432,7 @@
 </script>
 
 <style lang="less">
-  .super-flow-demo2 {
+  .super-flow-base-demo {
     width            : 100%;
     height           : 800px;
     margin           : 0 auto;

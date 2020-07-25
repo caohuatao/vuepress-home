@@ -7,11 +7,12 @@
   <div class="super-flow-demo1">
     <super-flow
       ref="superFlow"
-      :width="1000"
-      :height="800"
       :graph-menu="graphMenu"
       :node-menu="nodeMenu"
-      :link-menu="linkMenu">
+      :link-menu="linkMenu"
+      :link-base-style="linkBaseStyle"
+      :link-style="linkStyle"
+      :link-desc="linkDesc">
       <template v-slot:node="{meta}">
         <div
           class="flow-node">
@@ -122,14 +123,39 @@
               selected: link => {
                 link.remove()
               }
+            },
+            {
+              label: '编辑',
+              selected: link => {
+                if(link.meta) {
+                  link.meta.info += '以'
+                } else {
+                  link.meta = {
+                    info: '123123'
+                  }
+                }
+              }
             }
           ]
-        ]
+        ],
+        linkBaseStyle: {
+          font: '14px Arial',
+          dotted: false,
+          lineDash: [4, 4]
+        }
       }
     },
     methods: {
       flowNodeClick(meta) {
-        console.log(`编辑 ${meta.label}`)
+        console.log(this.$refs.superFlow.graph)
+      },
+      linkStyle(link) {
+        return {
+          // hover: '#FF00FF'
+        }
+      },
+      linkDesc(link) {
+        return link.meta ? link.meta.info : ''
       }
     }
   }
@@ -137,10 +163,10 @@
 
 <style lang="less">
   .super-flow-demo1 {
-    width    : 100%;
-    height   : auto;
-    margin   : 0 auto;
-    overflow : auto;
+    width            : 100%;
+    height           : 800px;
+    margin           : 0 auto;
+    background-color : #f5f5f5;
 
     .super-flow__node {
       .flow-node {

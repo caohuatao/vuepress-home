@@ -13,6 +13,22 @@ module.exports = {
       {text: '文档', link: '/guide/'},
       {text: '示例', link: '/demo/'},
       {text: 'Github', link: 'https://github.com/caohuatao/vue-super-flow', target: '_blank'}
+    ],
+    sidebar: [
+      {
+        title: '示例',
+        collapsable: false,
+        children: [
+          {
+            title: '默认示例',
+            path: '/demo/'
+          },
+          {
+            title: '菜单配置',
+            path: '/demo/menu'
+          }
+        ]
+      }
     ]
   }
 }
