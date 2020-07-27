@@ -12,7 +12,7 @@ footer: MIT Licensed | Copyright © 2020
 
 ## 当前版本
 ```
-v1.3.4
+v1.3.5
 ```
 
 ## 安装

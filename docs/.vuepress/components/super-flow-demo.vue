@@ -10,6 +10,7 @@
         class="link-base-style-form"
         ref="linkBaseStyle"
         label-width="100px"
+        @submit.stop
         :model="linkBaseStyle">
         <h4>linkBaseStyle</h4>
         <el-row :gutter="10">

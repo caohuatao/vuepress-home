@@ -7513,10 +7513,10 @@ vue-style-loader@^4.1.0:
     hash-sum "^1.0.2"
     loader-utils "^1.0.2"
 
-vue-super-flow@^1.3.4:
-  version "1.3.4"
-  resolved "https://registry.npmjs.org/vue-super-flow/-/vue-super-flow-1.3.4.tgz#64305e5c5bb433f312e1782c67c895a4af398aba"
-  integrity sha512-yBubDWbhVUcTKURBUjTUlQVEyRUSlpLmh10R3NzkFKeukHQ8a56gTVZSB/cxNSFvWPiqdRfej9VF/dfZF4ijmA==
+vue-super-flow@^1.3.5:
+  version "1.3.5"
+  resolved "https://registry.npmjs.org/vue-super-flow/-/vue-super-flow-1.3.5.tgz#713cc8d4c16f480f0fd7434362e9faeafc7bd0db"
+  integrity sha512-2/W3lBYtc32X4Yhmyi1tjrZhqvsvtphH1ZZLHlAoAxSrcvZFt+DKZwQDpzAuViM/JrQfn8d2dIyPlxCigeu74A==
 
 vue-template-compiler@^2.6.10:
   version "2.6.11"

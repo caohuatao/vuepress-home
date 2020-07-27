@@ -380,7 +380,7 @@ methods: {
 
 ## 方法
 
-### selectedAll
+### selectAll
 
 - 参数: ``
 
