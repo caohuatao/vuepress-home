@@ -1,9 +1,4 @@
-
-::: tip 提示
-画布空白区域、节点上、连线上使用右键调用菜单。
-:::
-
-<super-flow-base></super-flow-base>
+<super-flow-demo></super-flow-demo>
 
 ::: details 查看代码
 
@@ -308,13 +303,10 @@
         graphMenu: [
           [
             {
-              // 选项 label
               label: '节点1',
-              // 选项是否禁用
               disable(graph) {
                 return !!graph.nodeList.find(node => node.meta.label === '1')
               },
-              // 选项选中后回调函数
               selected(graph, coordinate) {
                 graph.addNode({
                   width: 120,
@@ -571,15 +563,12 @@
     .el-form-item {
       margin-bottom : 12px;
     }
-
-    padding-bottom : 20px;
-    border-bottom  : 1px solid #DCDCDC;
   }
 
   .super-flow-demo1 {
-    margin-top       : 20px ;
     width            : 100%;
     height           : 800px;
+    margin           : 0 auto;
     background-color : #f5f5f5;
     @list-width      : 200px;
 
@@ -635,3 +624,4 @@
 ```
 
 :::
+

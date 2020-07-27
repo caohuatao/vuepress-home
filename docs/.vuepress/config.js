@@ -1,6 +1,7 @@
 module.exports = {
   title: 'Vue super flow',
   description: '快速方便实现流程图',
+  port: 3200,
   home: true,
   locales: {
     '/': {
@@ -24,8 +25,8 @@ module.exports = {
             path: '/demo/'
           },
           {
-            title: '菜单配置',
-            path: '/demo/menu'
+            title: '进阶示例',
+            path: '/demo/super'
           }
         ]
       }

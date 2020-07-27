@@ -1,13 +1,3 @@
-
-::: tip 提示
-画布空白区域、节点上、连线上使用右键调用菜单。
-:::
-
-<super-flow-base></super-flow-base>
-
-::: details 查看代码
-
-```vue
 <!--
  * User: CHT
  * Date: 2020/6/28
@@ -631,7 +621,3 @@
     }
   }
 </style>
-
-```
-
-:::
