@@ -34,7 +34,8 @@
       :close-on-click-modal="false"
       width="500px">
       <el-form
-        @submit.stop
+        @keyup.native.enter="settingSubmit"
+        @submit.native.prevent
         v-show="drawerConf.type === drawerType.node"
         ref="nodeSetting"
         :model="nodeSetting">
@@ -58,7 +59,8 @@
         </el-form-item>
       </el-form>
       <el-form
-        @submit.stop
+        @keyup.native.enter="settingSubmit"
+        @submit.native.prevent
         v-show="drawerConf.type === drawerType.link"
         ref="linkSetting"
         :model="linkSetting">

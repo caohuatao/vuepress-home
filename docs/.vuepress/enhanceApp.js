@@ -4,12 +4,12 @@
  * Time: 17:18
  */
 // 使用异步函数也是可以的
-import VueSuperFlow from 'vue-super-flow'
+import VueSuperFlow from '../../../super-flow/packages/index'
 
 import ElementUI from 'element-ui'
 
 import 'element-ui/lib/theme-chalk/index.css'
-import 'vue-super-flow/lib/index.css'
+// import 'vue-super-flow/lib/index.css'
 
 export default (props) => {
   const {

@@ -10,7 +10,7 @@
         class="link-base-style-form"
         ref="linkBaseStyle"
         label-width="100px"
-        @submit.stop
+        @submit.native.prevent
         :model="linkBaseStyle">
         <h4>linkBaseStyle</h4>
         <el-row :gutter="10">
@@ -124,6 +124,8 @@
           :link-desc="linkDesc">
           <template v-slot:node="{meta}">
             <div
+              @mouseup="nodeMouseUp"
+              @click="nodeClick"
               class="flow-node">
               {{meta.name}}
             </div>
@@ -138,6 +140,8 @@
       :close-on-click-modal="false"
       width="500px">
       <el-form
+        @keyup.native.enter="settingSubmit"
+        @submit.native.prevent
         v-show="drawerConf.type === drawerType.node"
         ref="nodeSetting"
         :model="nodeSetting">
@@ -161,6 +165,8 @@
         </el-form-item>
       </el-form>
       <el-form
+        @keyup.native.enter="settingSubmit"
+        @submit.native.prevent
         v-show="drawerConf.type === drawerType.link"
         ref="linkSetting"
         :model="linkSetting">
@@ -459,6 +465,13 @@
         conf.visible = false
       },
 
+      nodeMouseUp(evt) {
+        evt.preventDefault()
+      },
+
+      nodeClick() {
+        console.log(arguments)
+      },
 
       docMousemove({clientX, clientY}) {
         const conf = this.dragConf
@@ -568,7 +581,7 @@
   }
 
   .super-flow-demo1 {
-    margin-top       : 20px ;
+    margin-top       : 20px;
     width            : 100%;
     height           : 800px;
     background-color : #f5f5f5;
@@ -592,6 +605,7 @@
 
     .super-flow__node {
       .flow-node {
+        box-sizing  : border-box;
         width       : 100%;
         height      : 100%;
         line-height : 40px;
