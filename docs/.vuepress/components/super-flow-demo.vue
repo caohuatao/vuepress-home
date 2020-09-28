@@ -12,7 +12,7 @@
         label-width="100px"
         @submit.native.prevent
         :model="linkBaseStyle">
-        <h4>linkBaseStyle</h4>
+        <h4>linkBaseStyle (连线的样式定制)</h4>
         <el-row :gutter="10">
           <el-col :span="12">
             <el-form-item label="color">
@@ -126,7 +126,7 @@
             <div
               @mouseup="nodeMouseUp"
               @click="nodeClick"
-              class="flow-node">
+              class="flow-node ellipsis">
               {{meta.name}}
             </div>
           </template>
@@ -571,6 +571,14 @@
 </script>
 
 <style lang="less">
+
+  .ellipsis {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    word-wrap: break-word;
+  }
+
   .link-base-style-form {
     .el-form-item {
       margin-bottom : 12px;
@@ -635,4 +643,5 @@
       box-shadow : 1px 1px 8px rgba(0, 0, 0, 0.4);
     }
   }
+
 </style>

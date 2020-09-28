@@ -15,6 +15,7 @@
         class="link-base-style-form"
         ref="linkBaseStyle"
         label-width="100px"
+        @submit.native.prevent
         :model="linkBaseStyle">
         <h4>linkBaseStyle</h4>
         <el-row :gutter="10">
@@ -128,7 +129,9 @@
           :link-desc="linkDesc">
           <template v-slot:node="{meta}">
             <div
-              class="flow-node">
+              @mouseup="nodeMouseUp"
+              @click="nodeClick"
+              class="flow-node ellipsis">
               {{meta.name}}
             </div>
           </template>
@@ -142,6 +145,8 @@
       :close-on-click-modal="false"
       width="500px">
       <el-form
+        @keyup.native.enter="settingSubmit"
+        @submit.native.prevent
         v-show="drawerConf.type === drawerType.node"
         ref="nodeSetting"
         :model="nodeSetting">
@@ -165,6 +170,8 @@
         </el-form-item>
       </el-form>
       <el-form
+        @keyup.native.enter="settingSubmit"
+        @submit.native.prevent
         v-show="drawerConf.type === drawerType.link"
         ref="linkSetting"
         :model="linkSetting">
@@ -303,10 +310,13 @@
         graphMenu: [
           [
             {
+              // 选项 label
               label: '节点1',
+              // 选项是否禁用
               disable(graph) {
                 return !!graph.nodeList.find(node => node.meta.label === '1')
               },
+              // 选项选中后回调函数
               selected(graph, coordinate) {
                 graph.addNode({
                   width: 120,
@@ -460,6 +470,13 @@
         conf.visible = false
       },
 
+      nodeMouseUp(evt) {
+        evt.preventDefault()
+      },
+
+      nodeClick() {
+        console.log(arguments)
+      },
 
       docMousemove({clientX, clientY}) {
         const conf = this.dragConf
@@ -559,16 +576,27 @@
 </script>
 
 <style lang="less">
+
+  .ellipsis {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    word-wrap: break-word;
+  }
+
   .link-base-style-form {
     .el-form-item {
       margin-bottom : 12px;
     }
+
+    padding-bottom : 20px;
+    border-bottom  : 1px solid #DCDCDC;
   }
 
   .super-flow-demo1 {
+    margin-top       : 20px;
     width            : 100%;
     height           : 800px;
-    margin           : 0 auto;
     background-color : #f5f5f5;
     @list-width      : 200px;
 
@@ -590,6 +618,7 @@
 
     .super-flow__node {
       .flow-node {
+        box-sizing  : border-box;
         width       : 100%;
         height      : 100%;
         line-height : 40px;
@@ -619,6 +648,7 @@
       box-shadow : 1px 1px 8px rgba(0, 0, 0, 0.4);
     }
   }
+
 </style>
 
 ```

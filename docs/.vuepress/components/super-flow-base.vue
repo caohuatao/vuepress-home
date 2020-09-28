@@ -18,7 +18,7 @@
       :link-desc="linkDesc">
       <template v-slot:node="{meta}">
         <div :class="`flow-node flow-node-${meta.prop}`">
-          <header>
+          <header class="ellipsis">
             {{meta.name}}
           </header>
           <section>
@@ -545,6 +545,13 @@
 </script>
 
 <style lang="less">
+  .ellipsis {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    word-wrap: break-word;
+  }
+
   .super-flow-base-demo {
     width            : 100%;
     height           : 800px;
