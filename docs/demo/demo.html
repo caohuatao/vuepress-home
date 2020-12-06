@@ -1,0 +1,30 @@
+<!--
+ * User: CHT
+ * Date: 2020/8/21
+ * Time: 11:25
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+  const a = {
+    a: 1,
+    b: 2
+  }
+  const c = Object.create(a, {
+    c: {
+      value: 3
+    }
+  })
+  // c.__proto__ = a
+  // c.c = 3
+  console.log(c)
+  console.log(a)
+
+</script>
+</body>
+</html>
