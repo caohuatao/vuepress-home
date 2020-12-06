@@ -15,7 +15,7 @@ sidebar: auto
 
 npm install vue-super-flow
 
-yran add vue-spuer-flow
+yarn add vue-spuer-flow
 
 ```
 
