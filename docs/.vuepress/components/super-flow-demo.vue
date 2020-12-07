@@ -440,8 +440,14 @@
         console.log(this.$refs.superFlow.graph)
       },
       linkStyle(link) {
-        return {
-          // hover: '#FF00FF'
+        if (link.meta && link.meta.desc === '1') {
+          return {
+            color: 'red',
+            hover: '#FF00FF',
+            dotted: true
+          }
+        } else {
+          return {}
         }
       },
       linkDesc(link) {
@@ -573,10 +579,10 @@
 <style lang="less">
 
   .ellipsis {
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    word-wrap: break-word;
+    white-space   : nowrap;
+    text-overflow : ellipsis;
+    overflow      : hidden;
+    word-wrap     : break-word;
   }
 
   .link-base-style-form {

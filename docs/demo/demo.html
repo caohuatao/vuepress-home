@@ -11,20 +11,45 @@
 </head>
 <body>
 <script>
-  const a = {
-    a: 1,
-    b: 2
-  }
-  const c = Object.create(a, {
-    c: {
-      value: 3
-    }
-  })
-  // c.__proto__ = a
-  // c.c = 3
-  console.log(c)
-  console.log(a)
+  /**
+   * Definition for a binary tree node.
 
+   */
+
+  function TreeNode(val) {
+    this.val = val
+    this.left = this.right = null
+  }
+
+  const root = new TreeNode(3)
+
+  root.left = new TreeNode(9)
+  root.right = new TreeNode(20)
+  root.right.left = new TreeNode(15)
+  root.right.right = new TreeNode(7)
+
+
+  console.log(root)
+  /**
+   * @param {TreeNode} root
+   * @return {number[][]}
+   */
+  const levelOrder = function (root) {
+
+    const order = rootList => {
+      const list = []
+      rootList.forEach(item => {
+        list.push(
+          ...order([item.left, item.right].filter(Boolean))
+        )
+      })
+      return list
+    }
+
+    console.log(order([root.left, root.right].filter(Boolean)))
+  }
+
+  levelOrder(root)
 </script>
 </body>
 </html>

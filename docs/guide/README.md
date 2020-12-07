@@ -15,7 +15,7 @@ sidebar: auto
 
 npm install vue-super-flow
 
-yran add vue-spuer-flow
+yarn add vue-super-flow
 
 ```
 
@@ -268,7 +268,7 @@ function linkStyle(link) {
         return !!graph.nodeList.find(point => point.meta.prop === 'end')
       },
       selected: (graph, coordinate) => {
-        graph.addNode({
+        graph.addNode({fv
           width: 80,
           height: 50,
           coordinate: coordinate,
